@@ -3,6 +3,19 @@ Jabacat's Easy Config
 
 [JEC-py](https://github.com/JakeRoggenbuck/JEC-py) | JEC-rs | [JEC-go](https://github.com/JakeRoggenbuck/JEC-go) | JEC-c | JEC-c++ | JEC-zig | JEC-ts
 
+## API
+```py
+ConfigFile
+  - Exists
+  - Remove
+  - Create
+  
+ConfigDir
+  - Exists
+  - Remove
+  - Create
+```
+
 ## Usage
 ```go
 conf := ConfigFile{"./test.conf"}
