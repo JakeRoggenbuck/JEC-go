@@ -1,6 +1,9 @@
 package main
 
-import "testing"
+import (
+	"testing"
+	"strings"
+)
 
 func TestConfigFile(t *testing.T) {
 	conf := ConfigFile{"./test.conf"}
@@ -28,6 +31,12 @@ func TestConfigFile(t *testing.T) {
 
 	if got != want {
 		t.Errorf("got %v, wanted %v", got, want)
+	}
+
+	conf = ConfigFile{""}.FromHome("./test.conf")
+
+	if !strings.Contains(conf.path, "home") {
+		t.Errorf("wanted home in %v", conf.path)
 	}
 }
 
@@ -57,5 +66,11 @@ func TestConfigDir(t *testing.T) {
 
 	if got != want {
 		t.Errorf("got %v, wanted %v", got, want)
+	}
+
+	conf = ConfigDir{""}.FromHome("./test.conf")
+
+	if !strings.Contains(conf.path, "home") {
+		t.Errorf("wanted home in %v", conf.path)
 	}
 }
