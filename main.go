@@ -33,6 +33,15 @@ func (f ConfigFile) Remove() {
     }
 }
 
+func (f ConfigFile) FromHome(path string) ConfigFile {
+	dirname, err := os.UserHomeDir()
+    if err != nil {
+        log.Fatal( err )
+    }
+
+	return ConfigFile { dirname + path }
+}
+
 type ConfigDir struct {
 	path string
 }
@@ -58,4 +67,13 @@ func (f ConfigDir) Remove() {
     if e != nil {
         log.Fatal(e)
     }
+}
+
+func (f ConfigDir) FromHome(path string) ConfigDir {
+	dirname, err := os.UserHomeDir()
+    if err != nil {
+        log.Fatal( err )
+    }
+
+	return ConfigDir { dirname + path }
 }
