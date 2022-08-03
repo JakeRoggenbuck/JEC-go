@@ -32,4 +32,7 @@ if !dir.Exists() {
 
 conf.Remove()
 dir.Remove()
+
+conf = ConfigFile{""}.FromHome("./test.conf")
+strings.Contains(conf.path, "home") # true at /home/user/test.conf
 ```
