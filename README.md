@@ -1,7 +1,20 @@
 # JEC-go
 Jabacat's Easy Config
 
-JEC-py | JEC-rs | [JEC-go](https://github.com/JakeRoggenbuck/JEC-go) | JEC-c | JEC-c++ | JEC-zig | JEC-ts
+[JEC-py](https://github.com/JakeRoggenbuck/JEC-py) | JEC-rs | [JEC-go](https://github.com/JakeRoggenbuck/JEC-go) | JEC-c | JEC-c++ | JEC-zig | JEC-ts
+
+## API
+```go
+ConfigFile
+  - Exists
+  - Remove
+  - Create
+  
+ConfigDir
+  - Exists
+  - Remove
+  - Create
+```
 
 ## Usage
 ```go
