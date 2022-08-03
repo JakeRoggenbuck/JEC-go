@@ -35,9 +35,8 @@ func TestConfigFile(t *testing.T) {
 
 	conf = ConfigFile{""}.FromHome("./test.conf")
 
-	got = conf.path
-	if strings.Contains(got, "home") {
-		t.Errorf("wanted home in %v", got)
+	if !strings.Contains(conf.path, "home") {
+		t.Errorf("wanted home in %v", conf.path)
 	}
 }
 
@@ -67,5 +66,11 @@ func TestConfigDir(t *testing.T) {
 
 	if got != want {
 		t.Errorf("got %v, wanted %v", got, want)
+	}
+
+	conf = ConfigDir{""}.FromHome("./test.conf")
+
+	if !strings.Contains(conf.path, "home") {
+		t.Errorf("wanted home in %v", conf.path)
 	}
 }
