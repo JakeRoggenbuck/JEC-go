@@ -9,11 +9,13 @@ ConfigFile
   - Exists
   - Remove
   - Create
+  - FromHome
   
 ConfigDir
   - Exists
   - Remove
   - Create
+  - FromHome
 ```
 
 ## Usage
