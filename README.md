@@ -1,7 +1,14 @@
 # JEC-go ![Go](https://img.shields.io/github/workflow/status/jakeroggenbuck/JEC-go/Go?style=for-the-badge)
 Jabacat's Easy Config
 
-[JEC-py](https://github.com/JakeRoggenbuck/JEC-py) | [JEC-rs](https://github.com/JakeRoggenbuck/JEC-rs) | [JEC-go](https://github.com/JakeRoggenbuck/JEC-go) | JEC-c | [JEC-c++](https://github.com/Shuzhengz/JEC-cpp) | JEC-zig | JEC-ts
+[JEC-py](https://github.com/jabacat/JEC-py) |
+[JEC-rs](https://github.com/jabacat/JEC-rs) |
+[JEC-go](https://github.com/jabacat/JEC-go) |
+[JEC-c++](https://github.com/jabacat/JEC-cpp) |
+[JEC-kt](https://github.com/jabacat/JEC-kt) |
+JEC-c |
+JEC-zig |
+JEC-ts
 
 ## API
 ```go
